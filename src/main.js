@@ -15,7 +15,6 @@ const refs = {
 
 const params = {
   API_KEY: '41227446-81114c3a771220f4777577230',
-  // BASE_URL: 'https://pixabay.com/api/',
 };
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 
@@ -31,7 +30,6 @@ async function getGaleryItems(page = currentPage) {
     .then(resp => resp.data)
     .catch(err => console.error(err));
   return data;
-  cl;
 }
 
 refs.searchBtn.addEventListener('click', onSearch);
